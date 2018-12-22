@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,900" rel="stylesheet">
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -16,6 +20,10 @@
 
   body{
       background: #4A349B;
+        background-image: url(right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
     }
 
   header{
@@ -24,6 +32,15 @@
     width:100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.right{
+  width:100%;
+  background-image: url(right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 
@@ -48,27 +65,40 @@ i{
 }
 
 h1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
   color:#fff;
   font-size:4em;
+  letter-spacing: 2px;
 }
 
 p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
   color:#fff;
   font-size:2em;
+  letter-spacing: 2px;
 }
 
 .left{
   padding-top:20px;
 }
 
-#economics, #workforce{
-  display: none;
+.blinking{
+  animation:blinkingText 4s infinite;
 }
-.workforce:hover ~ .text-info #workforce {
-  display: block;
+.blinking1{
+  animation:blinkingText 4s infinite;
 }
-.economics:hover ~ .text-info #economics {
-  display: block;
+.blinking2{
+  animation:blinkingText 4s infinite;
+}
+@keyframes blinkingText{
+  0%{   color: #000;  }
+  49%{  color: transparent; }
+  50%{  color: transparent; }
+  99%{  color:transparent;  }
+  100%{ color: #000;  }
 }
 
 
@@ -78,6 +108,7 @@ span{
   font-size:1.5em;
   text-transform: uppercase;
   padding: 5px;
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -91,6 +122,18 @@ span{
 .left{
   height: auto;
 }
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.animation{
+  display: none;
+}
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
@@ -102,6 +145,10 @@ span{
 
 .left{
   height: auto;
+}
+
+.animation{
+  display: none;
 }
 
 } 
@@ -120,6 +167,10 @@ span{
   height: auto;
 }
 
+.animation{
+  display: none;
+}
+
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -127,6 +178,10 @@ span{
 
 .left{
   height: 100vh;
+}
+
+.animation{
+  display: none;
 }
 
 } 
@@ -164,6 +219,11 @@ p{
 
 .right{
   padding-top: 200px;
+  height: 100vh;
+}
+
+.animation{
+  display: block;
 }
 }
 </style>
@@ -175,16 +235,18 @@ p{
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 left" style="background-color: #fff;">
           <img class="img-fluid economics" src="MandD.svg" alt="nomsies svg">
-           <div class="text-info"><p id="economics" style="color:#000; text-transform: uppercase;" class="text-center">Nom Nom Nom</p></div>
+           <div><p class="text-center animation"><span class="blinking">NOM</span>
+<span class="blinking1">NOM</span>
+<span class="blinking2">NOMSIES</span></p></div>
         </div>
          <div class="col-sm-12 col-md-12 col-lg-6 right" style="background-color:#4A349B;">
              <h1 style="color:#fff;">Nomsies</h1>
               <p>Is temporarily down for renovations...</p>
 
               <ul>
-                <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-2x fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa fa-2x  fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-2x  fa-instagram"></i></a></li>
               </ul>
         </div>
       </div>
