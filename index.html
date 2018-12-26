@@ -20,10 +20,10 @@
 
   body{
       background: #4A349B;
-        background-image: url(right.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+      background-image: url('https://res.cloudinary.com/alexscloud1234/image/upload/v1545861327/right_gtjabn.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
   header{
@@ -34,16 +34,22 @@
     margin-right: auto;
 }
 
+/*--Right and left side style--*/
 .right{
   width:100%;
-  background-image: url(right.png);
+  background-image: url('https://res.cloudinary.com/alexscloud1234/image/upload/v1545861327/right_gtjabn.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
+.left{
+  padding-top:20px;
+}
 
+
+/*--Scoail Icon Style--*/
 ul{
   margin:0px!important;
   padding:0px;
@@ -64,6 +70,8 @@ i{
   color:#fff;
 }
 
+
+/*--Font Styles--*/
 h1{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
@@ -80,10 +88,8 @@ p{
   letter-spacing: 2px;
 }
 
-.left{
-  padding-top:20px;
-}
 
+/*--Text Animation--*/
 .blinking{
   animation:blinkingText 4s infinite;
 }
@@ -111,8 +117,11 @@ span{
 
 }
 
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+/*--Right and left side style--*/
 .right{
   padding-top: 50px;
   height: 100%;
@@ -123,6 +132,8 @@ span{
   height: auto;
 }
 
+
+/*--Paragraph Styles--*/
 p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
@@ -131,12 +142,16 @@ p {
     letter-spacing: 2px;
 }
 
+/*--No Animation--*/
 .animation{
   display: none;
 }
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
+
+/*--Right and left side style--*/
 .right{
   padding-top: 50px;
   height: 100%;
@@ -147,6 +162,7 @@ p {
   height: auto;
 }
 
+/*--No Animation--*/
 .animation{
   display: none;
 }
@@ -156,7 +172,7 @@ p {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-
+/*--Right and left side style--*/
 .right{
   padding-top: 50px;
   height: 100%;
@@ -167,6 +183,7 @@ p {
   height: auto;
 }
 
+/*--No Animation--*/
 .animation{
   display: none;
 }
@@ -176,10 +193,12 @@ p {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+/*--left side style--*/
 .left{
   height: 100vh;
 }
 
+/*--No Animation--*/
 .animation{
   display: none;
 }
@@ -190,7 +209,7 @@ p {
 @media only screen and (min-width: 1200px) {
 
 
-    header{
+header{
     position: relative;
     height: 100vh;
     width:100%;
@@ -227,26 +246,29 @@ p{
 }
 }
 </style>
-    
-  </head>
-  <body>
+
+</head>
+
+<body>
   <header>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 left" style="background-color: #fff;">
-          <img class="img-fluid economics" src="MandD.svg" alt="nomsies svg">
-           <div><p class="text-center animation"><span class="blinking">NOM</span>
-<span class="blinking1">NOM</span>
-<span class="blinking2">NOMSIES</span></p></div>
+          <img class="img-fluid economics" src="https://res.cloudinary.com/alexscloud1234/image/upload/v1545861466/MandD_hvvpqm.svg" alt="nomsies svg">
+           <div>
+              <p class="text-center animation">
+                <span class="blinking">NOM</span>
+                <span class="blinking1">NOM</span>
+                <span class="blinking2">NOMSIES</span>
+              </p>
+          </div>
         </div>
          <div class="col-sm-12 col-md-12 col-lg-6 right" style="background-color:#4A349B;">
              <h1 style="color:#fff;">Nomsies</h1>
               <p>Is temporarily down for renovations...</p>
-
               <ul>
-                <li><a href=""><i class="fa fa-2x fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fa fa-2x  fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-2x  fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/nomsies/"><i class="fa fa-2x fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/nomsies/?hl=en"><i class="fa fa-2x  fa-instagram"></i></a></li>
               </ul>
         </div>
       </div>
